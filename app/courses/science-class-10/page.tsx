@@ -4,19 +4,12 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { Menu, X, Calendar, Mail, User, Star, ArrowRight, Play, Check, ShieldCheck, Award, MessageCircle, Clock, Download, Infinity as InfinityIcon, UserCheck, Users, CloudDownload, Globe, BookOpen, Contact, Plus, Clover, Asterisk, ChevronRight, ChevronDown, ListChecks, Laptop, Globe2, MousePointer2, Sparkles } from 'lucide-react';
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CertificateSection from "@/components/CertificateSection";
 
 export default function CourseDetailPage() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [curriculumOpen, setCurriculumOpen] = useState<number | null>(0);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const fadeUp: Variants = {
     hidden: { opacity: 0, y: 30 },
@@ -37,62 +30,8 @@ export default function CourseDetailPage() {
       {/* ============================================
           NAVIGATION
           ============================================ */}
-      <motion.header
-        initial={{ y: -80 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-white/80 backdrop-blur-xl border-b border-[#E5E7EB]" : "bg-transparent"
-        }`}
-      >
-        <nav className="max-w-[1200px] mx-auto px-6 h-[80px] flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-8 h-8">
-              <div className="absolute top-0 left-0 w-6 h-6 border-[2.5px] border-[#111827] rounded-[6px]" />
-              <div className="absolute bottom-0 right-0 w-6 h-6 border-[2.5px] border-[#8B5CF6] rounded-[6px]" />
-            </div>
-            <span className="font-extrabold text-[22px] tracking-tight text-[#111827]">Beyond<span className="text-[#8B5CF6]">Basics</span></span>
-          </Link>
+      <Navbar />
 
-          <ul className="hidden md:flex items-center gap-8">
-                        {["Courses", "About Us", "Contact Us"].map((label) => (
-              <li key={label}>
-                <Link href={label === "Courses" ? "/courses" : label === "About Us" ? "/about" : "/contact"} className="text-[15px] font-medium text-[#6B7280] hover:text-[#111827] transition-colors">
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-            <Link href="/#pricing" className="framer-button-primary px-6 py-3 text-[15px] font-semibold">
-              Start Learning Now
-            </Link>
-
-          <button className="md:hidden text-[#111827] p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </nav>
-
-        <AnimatePresence>
-          {mobileMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-white border-t border-[#E5E7EB] px-6 py-6 flex flex-col gap-5 overflow-hidden"
-            >
-              {["Courses", "Reviews", "Contact"].map((label) => (
-                <Link key={label} href={label === "Courses" ? "/courses" : `/#${label.toLowerCase()}`} onClick={() => setMobileMenuOpen(false)} className="text-[#6B7280] font-medium text-[16px]">
-                  {label}
-                </Link>
-              ))}
-              <Link href="/#pricing" onClick={() => setMobileMenuOpen(false)} className="bg-[#111827] text-white w-full text-center py-3.5 text-[15px] font-semibold rounded-full">
-                Join Now
-              </Link>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.header>
 
       {/* ============================================
           HERO SECTION

@@ -1,17 +1,21 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, BookOpen } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const links = [
-  { label: "Courses", href: "#courses" },
-  { label: "Reviews", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Courses", href: "/courses" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
@@ -19,99 +23,127 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  // Close menu on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   return (
-    <motion.header
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#08080f]/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20"
-          : "bg-transparent"
-      }`}
-    >
-      <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center group-hover:bg-violet-500 transition-colors">
-            <BookOpen size={16} className="text-white" />
+    <>
+      <motion.header
+        initial={{ y: -80 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+          scrolled || open
+            ? "bg-white/80 backdrop-blur-xl border-b border-[#E5E7EB]"
+            : "bg-transparent"
+        }`}
+      >
+        <nav className="max-w-[1200px] mx-auto px-6 h-[80px] flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative w-8 h-8">
+              <div className="absolute top-0 left-0 w-6 h-6 border-[2.5px] border-[#111827] rounded-[6px]" />
+              <div className="absolute bottom-0 right-0 w-6 h-6 border-[2.5px] border-[#8B5CF6] rounded-[6px]" />
+            </div>
+            <span className="font-extrabold text-[22px] tracking-tight text-[#111827]">
+              Beyond<span className="text-[#8B5CF6]">Basics</span>
+            </span>
+          </Link>
+
+          {/* Desktop Links */}
+          <ul className="hidden md:flex items-center gap-8">
+            {links.map((link) => (
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  className={`text-[15px] font-medium transition-colors ${
+                    pathname === link.href
+                      ? "text-[#8B5CF6]"
+                      : "text-[#6B7280] hover:text-[#111827]"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Desktop CTA */}
+          <div className="hidden md:flex items-center gap-4">
+            <Link
+              href="/courses"
+              className="bg-[#111827] text-white px-6 py-3 rounded-full text-[15px] font-semibold hover:bg-[#374151] transition-colors"
+            >
+              Start Learning Now
+            </Link>
           </div>
-          <span className="font-bold text-white text-lg tracking-tight">CourseSite</span>
-        </a>
 
-        {/* Desktop Links */}
-        <ul className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
-            <li key={l.label}>
-              <a
-                href={l.href}
-                className="text-sm text-slate-400 hover:text-white transition-colors duration-200 font-medium"
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        {/* CTA Buttons */}
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            href="#pricing"
-            className="px-4 py-2 text-sm font-semibold text-white bg-violet-600 rounded-full hover:bg-violet-500 transition-all duration-200 hover:shadow-lg hover:shadow-violet-500/30"
+          {/* Mobile Toggle */}
+          <button
+            className="md:hidden text-[#111827] p-2 focus:outline-none"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
           >
-            Join Now
-          </a>
-          <a
-            href="https://framer.link/3UNJHNw"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 text-sm font-semibold text-slate-300 border border-white/10 rounded-full hover:border-white/20 hover:text-white transition-all duration-200"
-          >
-            Template Demo
-          </a>
-        </div>
+            {open ? (
+              <X size={24} />
+            ) : (
+              <div className="flex flex-col gap-1.5 items-end">
+                <div className="w-6 h-0.5 bg-[#111827]"></div>
+                <div className="w-4 h-0.5 bg-[#111827]"></div>
+                <div className="w-6 h-0.5 bg-[#111827]"></div>
+              </div>
+            )}
+          </button>
+        </nav>
 
-        {/* Mobile Toggle */}
-        <button
-          className="md:hidden text-white p-2"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X size={22} /> : <Menu size={22} />}
-        </button>
-      </nav>
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3, ease: [0.23, 1, 0.32, 1] }}
+              className="md:hidden bg-white border-t border-[#E5E7EB] overflow-hidden"
+            >
+              <div className="px-6 py-8 flex flex-col gap-6">
+                {links.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className={`text-[20px] font-bold transition-colors ${
+                      pathname === link.href ? "text-[#8B5CF6]" : "text-[#111827]"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <Link
+                  href="/courses"
+                  className="mt-4 bg-[#8B5CF6] text-white px-6 py-4 rounded-[16px] text-[16px] font-bold text-center flex items-center justify-center gap-2"
+                >
+                  Start Learning Now <ArrowRight size={18} />
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.header>
 
-      {/* Mobile Menu */}
+      {/* Backdrop for mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0f0f1a]/95 backdrop-blur-xl border-t border-white/5"
-          >
-            <div className="px-6 py-4 flex flex-col gap-4">
-              {links.map((l) => (
-                <a
-                  key={l.label}
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className="text-slate-300 hover:text-white font-medium"
-                >
-                  {l.label}
-                </a>
-              ))}
-              <a
-                href="#pricing"
-                onClick={() => setOpen(false)}
-                className="px-4 py-2.5 text-sm font-semibold text-white bg-violet-600 rounded-full text-center hover:bg-violet-500 transition-colors"
-              >
-                Join Now
-              </a>
-            </div>
-          </motion.div>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setOpen(false)}
+            className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+          />
         )}
       </AnimatePresence>
-    </motion.header>
+    </>
   );
 }

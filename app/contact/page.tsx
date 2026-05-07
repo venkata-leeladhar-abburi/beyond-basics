@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, Mail, MessageCircle, ShieldAlert, Send, MapPin, Globe, Phone, Clock, Plus, Minus, ShieldCheck, Zap, Lock } from 'lucide-react';
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function ContactUs() {
@@ -12,14 +13,6 @@ export default function ContactUs() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const fadeUp: any = {
     hidden: { opacity: 0, y: 30 },
@@ -71,49 +64,8 @@ export default function ContactUs() {
       {/* ============================================
           NAVIGATION
           ============================================ */}
-      <motion.header
-        initial={{ y: -80 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-white/80 backdrop-blur-xl border-b border-[#E5E7EB]" : "bg-transparent"
-        }`}
-      >
-        <nav className="max-w-[1200px] mx-auto px-6 h-[80px] flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-8 h-8">
-              <div className="absolute top-0 left-0 w-6 h-6 border-[2.5px] border-[#111827] rounded-[6px]" />
-              <div className="absolute bottom-0 right-0 w-6 h-6 border-[2.5px] border-[#8B5CF6] rounded-[6px]" />
-            </div>
-            <span className="font-extrabold text-[22px] tracking-tight text-[#111827]">Beyond<span className="text-[#8B5CF6]">Basics</span></span>
-          </Link>
+      <Navbar />
 
-          <ul className="hidden md:flex items-center gap-8">
-            {["Courses", "About Us", "Contact Us"].map((label) => {
-              const href = label === "Courses" ? "/courses" : label === "About Us" ? "/about" : "/contact";
-              return (
-                <li key={label}>
-                  <Link href={href} className="text-[15px] font-medium text-[#6B7280] hover:text-[#111827] transition-colors">
-                    {label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-
-          <div className="hidden md:flex items-center gap-4">
-            <Link href="/#pricing" className="bg-[#111827] text-white px-6 py-3 rounded-full text-[15px] font-semibold hover:bg-[#374151] transition-colors">
-              Start Learning Now
-            </Link>
-          </div>
-
-          <button className="md:hidden text-[#111827] p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            <div className="w-6 h-0.5 bg-[#111827] mb-1.5"></div>
-            <div className="w-6 h-0.5 bg-[#111827] mb-1.5"></div>
-            <div className="w-6 h-0.5 bg-[#111827]"></div>
-          </button>
-        </nav>
-      </motion.header>
 
       {/* 1. HERO / HEADER SECTION */}
       <section className="relative pt-[160px] pb-[80px] px-6 text-center overflow-hidden">

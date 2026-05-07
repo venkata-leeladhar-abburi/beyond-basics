@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowLeft, FileText, Check, X, AlertTriangle, Shield, Info, Mail, MapPin, Phone, ExternalLink, Globe, Smartphone, HelpCircle, Lock } from 'lucide-react';
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function TermsAndConditions() {
@@ -35,22 +36,7 @@ export default function TermsAndConditions() {
 
   return (
     <div className="min-h-screen bg-white text-[#111827] font-inter">
-      {/* Header */}
-      <header className="border-b border-[#E5E7EB] bg-white/80 backdrop-blur-md sticky top-0 z-50">
-        <div className="max-w-[1200px] mx-auto px-6 h-[80px] flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-[#6B7280] hover:text-[#111827] transition-colors font-medium text-[15px]">
-            <ArrowLeft size={18} />
-            Back to Home
-          </Link>
-          <div className="flex items-center gap-3">
-            <div className="relative w-8 h-8">
-              <div className="absolute top-0 left-0 w-6 h-6 border-[2.5px] border-[#111827] rounded-[6px]" />
-              <div className="absolute bottom-0 right-0 w-6 h-6 border-[2.5px] border-[#8B5CF6] rounded-[6px]" />
-            </div>
-            <span className="font-extrabold text-[22px] tracking-tight text-[#111827]">{brandName.split(' ')[0]}<span className="text-[#8B5CF6]">{brandName.split(' ')[1]}</span></span>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       <main className="max-w-[950px] mx-auto px-6 py-20">
         <motion.div 
