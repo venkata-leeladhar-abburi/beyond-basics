@@ -51,7 +51,7 @@ export default function RefundPolicy() {
                 At <strong>VISION TRIAD TECHNOLOGIES PRIVATE LIMITED</strong> ("we," "us," or "our"), we are committed to delivering high-quality online educational courses and learning experiences to students across India. We understand that circumstances can change, and we want to ensure a fair and transparent refund process for all our students.
               </p>
               <p className="mb-6">
-                This Refund Policy governs all purchases made on our online educational platform located at <strong>www.beyondbasics.in</strong> (the "Platform") and applies to all courses, bundles, memberships, and digital products sold by VISION TRIAD TECHNOLOGIES PRIVATE LIMITED.
+                This Refund Policy governs all purchases made on our online educational platform located at <strong>www.shraddha.in</strong> (the "Platform") and applies to all courses, bundles, memberships, and digital products sold by VISION TRIAD TECHNOLOGIES PRIVATE LIMITED.
               </p>
               <p>
                 This Policy is framed in accordance with the <strong>Consumer Protection Act, 2019</strong>, the <strong>Information Technology Act, 2000</strong>, and applicable guidelines issued by the <strong>Reserve Bank of India (RBI)</strong> and payment gateway partners including Razorpay, Cashfree, PayU, and Paytm Payment Gateway.
@@ -326,7 +326,7 @@ export default function RefundPolicy() {
                     <p>Email: <strong>timelly.tech@gmail.com</strong></p>
                     <p>Phone: <strong>+91 8309115799</strong></p>
                     <p>Mon-Sat, 9:00 AM – 6:00 PM IST</p>
-                    <p>Web: www.beyondbasics.in</p>
+                    <p>Web: www.shraddha.in</p>
                   </div>
                 </div>
                 <div className="p-6 bg-[#F9FAFB] rounded-2xl border border-[#F3F4F6]">

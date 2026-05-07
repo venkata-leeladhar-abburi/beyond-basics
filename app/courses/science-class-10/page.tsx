@@ -60,7 +60,7 @@ export default function CourseDetailPage() {
               <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-8 mb-10">
                 <div className="flex items-center gap-3">
                   <img src="/images/hero-avatar.jpg" alt="Jane Thomson" className="w-[45px] h-[45px] rounded-full object-cover" />
-                  <span className="text-[15px] font-bold text-[#111827]">Beyond Basics Faculty</span>
+                  <span className="text-[15px] font-bold text-[#111827]">Shraddha Faculty</span>
                 </div>
                 <div className="h-4 w-[1px] bg-[#E5E7EB] hidden sm:block" />
                 <div className="flex items-center gap-2 text-[14px] font-bold text-[#111827]">
@@ -176,7 +176,7 @@ export default function CourseDetailPage() {
                     <h3 className="text-[28px] font-bold mb-6 font-poppins">Meet Your Instructor</h3>
                     <div className="space-y-6 text-[15px] text-[#9CA3AF] leading-[1.6]">
                       <div>
-                        <h4 className="text-white font-bold mb-2">Science Faculty — Beyond Basics</h4>
+                        <h4 className="text-white font-bold mb-2">Science Faculty — Shraddha</h4>
                         <p>A dedicated Science educator with 7+ years of experience teaching Class 10th students across Andhra Pradesh. Our instructor specialises in making complex scientific concepts simple through visuals, analogies, and real-life examples — helping students shift from memorising to genuinely understanding.</p>
                       </div>
                       

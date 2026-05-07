@@ -25,12 +25,12 @@ export default function ContactUs() {
   };
 
   const faqs = [
-    { q: "How do I enrol in a course?", a: "Simply browse our courses at www.beyondbasics.in, click on the course you want, and click 'Enrol Now'. Complete the payment and you'll get instant access to the course." },
+    { q: "How do I enrol in a course?", a: "Simply browse our courses at www.shraddha.in, click on the course you want, and click 'Enrol Now'. Complete the payment and you'll get instant access to the course." },
     { q: "I made a payment but didn't get course access. What do I do?", a: "Please wait up to 15 minutes and refresh the page. If you still don't have access, email us at timelly.tech@gmail.com with your Order ID and payment screenshot." },
     { q: "Can I download course videos for offline use?", a: "Yes! Our platform supports offline downloads for all enrolled courses. You can access them from the 'My Courses' section." },
     { q: "How do I get my Certificate of Completion?", a: "Once you complete 100% of the course content and all assessments, your Certificate of Completion is automatically generated and available in your dashboard." },
-    { q: "I want a refund. What is the process?", a: "Please review our Refund Policy at www.beyondbasics.in/refund-policy. If eligible, email timelly.tech@gmail.com with your Order ID and reason within 7 days of purchase." },
-    { q: "Can I access a course on mobile?", a: "Yes! Beyond Basics is fully mobile-friendly. You can access all courses from any smartphone or tablet browser." },
+    { q: "I want a refund. What is the process?", a: "Please review our Refund Policy at www.shraddha.in/refund-policy. If eligible, email timelly.tech@gmail.com with your Order ID and reason within 7 days of purchase." },
+    { q: "Can I access a course on mobile?", a: "Yes! Shraddha is fully mobile-friendly. You can access all courses from any smartphone or tablet browser." },
     { q: "I forgot my password. How do I reset it?", a: "Click on 'Forgot Password' on the login page, enter your registered email, and follow the reset link sent to your inbox." }
   ];
 
@@ -227,7 +227,7 @@ export default function ContactUs() {
                 { icon: Phone, label: "Phone", value: "+91 8309115799" },
                 { icon: Clock, label: "Support Hours", value: "Monday – Saturday\n9:00 AM – 6:00 PM IST" },
                 { icon: MapPin, label: "Location", value: "Bangalore, Karnataka" },
-                { icon: Globe, label: "Website", value: "www.beyondbasics.in" }
+                { icon: Globe, label: "Website", value: "www.shraddha.in" }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
                   <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">

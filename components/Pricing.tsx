@@ -58,7 +58,7 @@ export default function Pricing() {
           <span className="text-[#8B5CF6] text-sm font-bold tracking-widest uppercase">Pricing</span>
           <h2 className="mt-4 text-[42px] md:text-[56px] font-extrabold text-[#111827] tracking-tight">Invest in Your Future</h2>
           <p className="mt-4 text-[#6B7280] text-[18px] max-w-[600px] mx-auto font-medium">
-            Join thousands of students across India who are going beyond the basics. No hidden fees, just pure learning.
+            Join thousands of students across India who are learning with Shraddha. No hidden fees, just pure learning.
           </p>
         </motion.div>
 

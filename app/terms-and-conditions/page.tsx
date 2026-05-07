@@ -29,7 +29,7 @@ export default function TermsAndConditions() {
   ];
 
   const companyLegalName = "VISION TRIAD TECHNOLOGIES PRIVATE LIMITED";
-  const brandName = "Beyond Basics";
+  const brandName = "Shraddha";
   const supportEmail = "timelly.tech@gmail.com";
   const phone = "+91 8309115799";
   const address = "Door No: 45/2, 3rd Floor, 17th Cross, 5th Main Road, Sector 2, HSR Layout, Bangalore, Karnataka - 560102";
@@ -59,7 +59,7 @@ export default function TermsAndConditions() {
             {/* Intro Section */}
             <section className="bg-[#F9FAFB] p-8 md:p-10 rounded-[40px] border border-[#F3F4F6]">
               <p className="mb-6">
-                Welcome to <strong>{companyLegalName}</strong> ("Company," "we," "us," or "our"). We operate an online educational platform at <strong>www.beyondbasics.in</strong> (the "Platform") that provides video-based courses, study materials, mock tests, and other learning resources primarily for students studying in Class 10th, Intermediate (Class 11th–12th), and B.Tech programmes across India.
+                Welcome to <strong>{companyLegalName}</strong> ("Company," "we," "us," or "our"). We operate an online educational platform at <strong>www.shraddha.in</strong> (the "Platform") that provides video-based courses, study materials, mock tests, and other learning resources primarily for students studying in Class 10th, Intermediate (Class 11th–12th), and B.Tech programmes across India.
               </p>
               <p className="mb-8">
                 By accessing, registering on, or using our Platform or any of our services (collectively, the "Services"), you confirm that you have read, understood, and agreed to be bound by these Terms and Conditions ("Terms"). If you do not agree with any part of these Terms, you must immediately discontinue use of our Services.
@@ -304,7 +304,7 @@ export default function TermsAndConditions() {
                 <span className="w-10 h-10 rounded-full bg-[#111827] text-white text-[14px] flex items-center justify-center shrink-0">12</span>
                 Limitation of Liability
               </h2>
-              <p className="mb-4">Beyond Basics shall not be liable for incidental, consequential, or punitive damages, or loss of data/profits.</p>
+              <p className="mb-4">Shraddha shall not be liable for incidental, consequential, or punitive damages, or loss of data/profits.</p>
               <div className="p-6 bg-red-50 border border-red-100 rounded-2xl text-red-800 font-bold text-[15px]">
                 Our total liability shall not exceed the amount paid by you for the specific course(s) giving rise to the claim.
               </div>

@@ -5,8 +5,8 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    q: "What is Beyond Basics?",
-    a: "Beyond Basics is a modern online learning platform offering practical, project-based courses in web development and design. Our courses are built by industry professionals and designed to be straightforward, focused, and immediately applicable.",
+    q: "What is Shraddha?",
+    a: "Shraddha is a modern online learning platform offering practical, project-based courses in web development and design. Our courses are built by industry professionals and designed to be straightforward, focused, and immediately applicable.",
   },
   {
     q: "Do you have a refund policy?",

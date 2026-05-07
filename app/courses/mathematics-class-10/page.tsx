@@ -60,7 +60,7 @@ export default function CourseDetailPage() {
               <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-8 mb-10">
                 <div className="flex items-center gap-3">
                   <img src="/images/hero-avatar.jpg" alt="Jane Thomson" className="w-[45px] h-[45px] rounded-full object-cover" />
-                  <span className="text-[15px] font-bold text-[#111827]">Beyond Basics Faculty</span>
+                  <span className="text-[15px] font-bold text-[#111827]">Shraddha Faculty</span>
                 </div>
                 <div className="h-4 w-[1px] bg-[#E5E7EB] hidden sm:block" />
                 <div className="flex items-center gap-2 text-[14px] font-bold text-[#111827]">
@@ -178,7 +178,7 @@ export default function CourseDetailPage() {
                     <h3 className="text-[28px] font-bold mb-6 font-poppins">Meet Your Instructor</h3>
                     <div className="space-y-6 text-[15px] text-[#9CA3AF] leading-[1.6]">
                       <div>
-                        <h4 className="text-white font-bold mb-2">Senior Maths Faculty — Beyond Basics</h4>
+                        <h4 className="text-white font-bold mb-2">Senior Maths Faculty — Shraddha</h4>
                         <p>With over 8 years of experience teaching Class 10th and Intermediate Maths, our faculty has helped more than 5,000 students crack board exams with confidence. Known for breaking down complex problems into simple, logical steps — this is Maths the way it should always have been taught.</p>
                       </div>
                       

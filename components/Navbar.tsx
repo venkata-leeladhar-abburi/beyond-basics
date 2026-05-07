@@ -48,7 +48,7 @@ export default function Navbar() {
               <div className="absolute bottom-0 right-0 w-6 h-6 border-[2.5px] border-[#8B5CF6] rounded-[6px]" />
             </div>
             <span className="font-extrabold text-[22px] tracking-tight text-[#111827]">
-              Beyond<span className="text-[#8B5CF6]">Basics</span>
+              Shraddha
             </span>
           </Link>
 

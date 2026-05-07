@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { Menu, X, Calendar, Mail, User, Star, ArrowRight, Play, Check, ShieldCheck, Award, MessageCircle, Clock, Download, Infinity as InfinityIcon, UserCheck, Users, CloudDownload, Globe, BookOpen, Contact, Plus, Clover, Asterisk, GraduationCap, Rocket, Heart, Smile, Shield, Sparkles, MapPin } from 'lucide-react';
 
 
-export default function BeyondBasicsPage() {
+export default function ShraddhaPage() {
   const [faqOpen, setFaqOpen] = useState<number | null>(0);
 
   const fadeUp: Variants = {
@@ -53,7 +53,7 @@ export default function BeyondBasicsPage() {
           </motion.div>
 
           <motion.h1 variants={fadeUp} className="text-[clamp(44px,6vw,72px)] leading-[1.05] tracking-tight font-extrabold mb-8 text-[#111827]">
-            Learn Smarter. Grow Faster. <br />Go Beyond.
+            Learn Smarter. Grow Faster. <br />With Shraddha.
           </motion.h1>
 
           <motion.p variants={fadeUp} className="text-[18px] md:text-[20px] text-[#6B7280] max-w-[650px] leading-[1.6] mb-12 font-medium">
@@ -411,7 +411,7 @@ export default function BeyondBasicsPage() {
                 What Our Students Are Saying
               </motion.h2>
               <motion.p variants={fadeUp} className="text-[15px] text-[#6B7280] leading-[1.6] mb-8 font-medium">
-                Don't take our word for it. Hear from students who transformed their skills with Beyond Basics.
+                Don't take our word for it. Hear from students who transformed their skills with Shraddha.
               </motion.p>
               <motion.a variants={fadeUp} href="#pricing" className="inline-flex items-center justify-center px-6 py-3.5 bg-[#111827] text-white rounded-full text-[14px] font-semibold hover:bg-[#374151] transition-colors shadow-md">
                 Start Learning Now
@@ -436,7 +436,7 @@ export default function BeyondBasicsPage() {
                 name: "Rahul M.", 
                 role: "B.Tech CSE, Hyderabad", 
                 img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=150&h=150", 
-                text: "I was completely lost in B.Tech 1st year. Beyond Basics helped me actually understand programming — not just memorize it. Best investment I've made.",
+                text: "I was completely lost in B.Tech 1st year. Shraddha helped me actually understand programming — not just memorize it. Best investment I've made.",
                 rotate: "rotate-[-3deg] hover:rotate-0"
               },
               { 
@@ -450,7 +450,7 @@ export default function BeyondBasicsPage() {
                 name: "Arjun K.", 
                 role: "Class 10, Guntur", 
                 img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150", 
-                text: "As a 10th student, I thought coding was only for college. Beyond Basics proved me wrong — and now I'm building my own projects!",
+                text: "As a 10th student, I thought coding was only for college. Shraddha proved me wrong — and now I'm building my own projects!",
                 rotate: "rotate-[3deg] hover:rotate-0"
               }
             ].map((t, i) => (
@@ -932,7 +932,7 @@ export default function BeyondBasicsPage() {
             {/* Right Column (Accordions) */}
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-4 pt-4">
               {[
-                { q: "What is Beyond Basics?", a: "Beyond Basics is a premium educational platform offering project-based learning to enhance your career and skills." },
+                { q: "What is Shraddha?", a: "Shraddha is a premium educational platform offering project-based learning to enhance your career and skills." },
                 { q: "Do you have refund policy?", a: "Our Purchases happen through Whop. Whop has its own refund policy, which you can find on their website. We recommend reviewing their policy before making a purchase." },
                 { q: "Is the community supportive?", a: "Absolutely! Our community is full of like-minded individuals eager to share knowledge." },
                 { q: "Are there live classes or just recorded content?", a: "We offer high-quality recorded content so you can learn at your own pace." }

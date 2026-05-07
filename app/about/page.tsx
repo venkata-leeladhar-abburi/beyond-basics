@@ -38,10 +38,10 @@ export default function AboutUs() {
           <motion.div initial="hidden" animate="show" variants={fadeUp} className="flex flex-col items-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#E5E7EB] bg-white text-[12px] font-semibold text-[#111827] shadow-sm mb-6">
               <span className="w-5 h-5 rounded-full bg-[#F5F3FF] flex items-center justify-center text-[#8B5CF6] text-[12px]"><Rocket size={14} className="text-current" /></span>
-              BEYOND BASICS
+              SHRADDHA
             </span>
             <h1 className="text-[48px] md:text-[68px] font-extrabold tracking-tight mb-6 leading-[1.1] text-[#111827]">
-              We Exist to Take Students <span className="text-[#8B5CF6]">Beyond the Basics</span>
+              We Exist to Help Students <span className="text-[#8B5CF6]">Excel</span>
             </h1>
             <p className="text-[18px] text-[#6B7280] leading-relaxed font-medium max-w-[700px] mx-auto mb-10">
               Built for 10th, Intermediate & B.Tech students across India — we're not just another ed-tech. We're your academic partner.
@@ -73,13 +73,13 @@ export default function AboutUs() {
             </h2>
             <div className="space-y-6 text-[16px] text-[#4B5563] leading-[1.8] font-medium">
               <p>
-                Beyond Basics was born out of a simple frustration — talented students struggling not because they lacked potential, but because they lacked access to the right guidance. We saw Class 10th students losing confidence, Intermediate students drowning in rote learning, and B.Tech freshers overwhelmed by a sudden jump in difficulty.
+                Shraddha was born out of a simple frustration — talented students struggling not because they lacked potential, but because they lacked access to the right guidance. We saw Class 10th students losing confidence, Intermediate students drowning in rote learning, and B.Tech freshers overwhelmed by a sudden jump in difficulty.
               </p>
               <p>
                 We decided to change that. What started as a small initiative to teach practical skills has grown into a platform trusted by over 20,000 students across Andhra Pradesh and beyond. Every course we create is designed with one question in mind: <strong className="text-[#111827]">"Will this actually help the student succeed?"</strong>
               </p>
               <p>
-                Beyond Basics is not just a course platform. It's a movement that believes every student — regardless of their school, college, or background — deserves world-class learning.
+                Shraddha is not just a course platform. It's a movement that believes every student — regardless of their school, college, or background — deserves world-class learning.
               </p>
             </div>
           </motion.div>
@@ -120,7 +120,7 @@ export default function AboutUs() {
       <section className="py-[100px] px-6 relative overflow-hidden bg-gradient-to-r from-[#0F3460] to-[#16213E] text-white">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <h2 className="text-[32px] md:text-[40px] font-extrabold mb-16">Beyond Basics in Numbers</h2>
+          <h2 className="text-[32px] md:text-[40px] font-extrabold mb-16">Shraddha in Numbers</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -176,7 +176,7 @@ export default function AboutUs() {
       {/* 6. MEET THE TEAM SECTION */}
       <section className="py-[100px] px-6">
         <div className="max-w-[1200px] mx-auto text-center">
-          <span className="text-[#8B5CF6] text-[12px] font-bold tracking-[2px] uppercase mb-4 block">THE PEOPLE BEHIND BEYOND BASICS</span>
+          <span className="text-[#8B5CF6] text-[12px] font-bold tracking-[2px] uppercase mb-4 block">THE PEOPLE BEHIND SHRADDHA</span>
           <h2 className="text-[36px] md:text-[48px] font-extrabold text-[#111827] mb-6">Meet Our Team</h2>
           <p className="text-[18px] text-[#6B7280] font-medium max-w-[600px] mx-auto mb-16">
             A passionate team of educators, designers, and technologists — all united by one goal: your success.
@@ -208,11 +208,11 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* 7. WHY CHOOSE BEYOND BASICS SECTION */}
+      {/* 7. WHY CHOOSE SHRADDHA SECTION */}
       <section className="py-[100px] px-6 bg-[#F3F4F6] border-y border-[#E5E7EB]">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-[36px] md:text-[48px] font-extrabold text-[#111827] mb-16 text-center max-w-[700px] mx-auto">
-            Why Thousands of Students Choose Beyond Basics
+            Why Thousands of Students Choose Shraddha
           </h2>
 
           <motion.div 
@@ -248,9 +248,9 @@ export default function AboutUs() {
       <section className="py-[100px] px-6 text-center text-white relative overflow-hidden bg-[#111827]">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div className="max-w-[800px] mx-auto relative z-10">
-          <h2 className="text-[36px] md:text-[52px] font-extrabold mb-6">Ready to Go Beyond the Basics?</h2>
+          <h2 className="text-[36px] md:text-[52px] font-extrabold mb-6">Ready to Learn with Shraddha?</h2>
           <p className="text-[18px] text-[#A8B2C8] font-medium mb-10 max-w-[600px] mx-auto">
-            Join 20,000+ students already learning, growing, and succeeding with Beyond Basics.
+            Join 20,000+ students already learning, growing, and succeeding with Shraddha.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/" className="bg-white text-[#111827] px-8 py-4 rounded-[12px] font-bold hover:bg-[#F3F4F6] transition-colors shadow-lg">

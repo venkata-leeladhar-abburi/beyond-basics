@@ -60,7 +60,7 @@ export default function CourseDetailPage() {
               <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-8 mb-10">
                 <div className="flex items-center gap-3">
                   <img src="/images/hero-avatar.jpg" alt="Jane Thomson" className="w-[45px] h-[45px] rounded-full object-cover" />
-                  <span className="text-[15px] font-bold text-[#111827]">Beyond Basics Faculty</span>
+                  <span className="text-[15px] font-bold text-[#111827]">Shraddha Faculty</span>
                 </div>
                 <div className="h-4 w-[1px] bg-[#E5E7EB] hidden sm:block" />
                 <div className="flex items-center gap-2 text-[14px] font-bold text-[#111827]">
@@ -178,7 +178,7 @@ export default function CourseDetailPage() {
                     <h3 className="text-[28px] font-bold mb-6 font-poppins">Meet Your Instructor</h3>
                     <div className="space-y-6 text-[15px] text-[#9CA3AF] leading-[1.6]">
                       <div>
-                        <h4 className="text-white font-bold mb-2">Python Developer & B.Tech Faculty — Beyond Basics</h4>
+                        <h4 className="text-white font-bold mb-2">Python Developer & B.Tech Faculty — Shraddha</h4>
                         <p>A working software developer with 6+ years in Python-based backend development. Also an experienced B.Tech educator who understands exactly where students get stuck. Has helped over 2,500 B.Tech students go from "never coded before" to "placement-ready" through structured, project-based learning.</p>
                       </div>
                       

@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
   ];
 
   const companyLegalName = "VISION TRIAD TECHNOLOGIES PRIVATE LIMITED";
-  const brandName = "Beyond Basics";
+  const brandName = "Shraddha";
   const supportEmail = "timelly.tech@gmail.com";
   const phone = "+91 8309115799";
   const address = "Door No: 45/2, 3rd Floor, 17th Cross, 5th Main Road, Sector 2, HSR Layout, Bangalore, Karnataka - 560102";
@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
             {/* Intro Section */}
             <section className="bg-[#F9FAFB] p-8 md:p-10 rounded-[40px] border border-[#F3F4F6]">
               <p className="mb-6">
-                This Privacy Policy describes how <strong>{companyLegalName}</strong> ("we," "us," or "our") collects, uses, stores, and protects the personal information of users ("you" or "your") who access our online educational platform at <strong>www.beyondbasics.in</strong> (the "Platform").
+                This Privacy Policy describes how <strong>{companyLegalName}</strong> ("we," "us," or "our") collects, uses, stores, and protects the personal information of users ("you" or "your") who access our online educational platform at <strong>www.shraddha.in</strong> (the "Platform").
               </p>
               <p className="mb-6">
                 We are committed to protecting your privacy and ensuring that your personal data is handled responsibly and transparently, in compliance with the <strong>Information Technology Act, 2000</strong>, the <strong>Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</strong>, and the forthcoming <strong>Digital Personal Data Protection Act, 2023 (India)</strong>.

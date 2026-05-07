@@ -18,11 +18,11 @@ export default function Footer() {
             <div className="w-[18px] h-[18px] bg-[#111827] rounded-[3px] rotate-45"></div>
             <div className="w-[18px] h-[18px] bg-[#111827] rounded-[3px] rotate-45 relative top-[-1px]"></div>
           </div>
-          <span className="text-[26px] font-extrabold tracking-tighter text-[#111827]">Beyond<span className="text-[#8B5CF6]">Basics</span></span>
+          <span className="text-[26px] font-extrabold tracking-tighter text-[#111827]">Shraddha</span>
         </div>
 
         <h2 className="text-[44px] md:text-[60px] font-extrabold tracking-tight mb-10 leading-[1.15] text-[#111827] max-w-[900px] mx-auto">
-          Boost Your Learning & Knowledge with Beyond Basics Now
+          Boost Your Learning & Knowledge with Shraddha Now
         </h2>
         
         <div className="flex flex-col items-center justify-center mb-28">

@@ -1,6 +1,6 @@
-# Beyond Basics – Practical Online Courses for Students
+# Shraddha – Practical Online Courses for Students
 
-Beyond Basics is a premium educational platform built for Class 10th, Intermediate, and B.Tech students across India. We provide high-quality, practical, and project-based courses designed to take students beyond textbook learning.
+Shraddha is a premium educational platform built for Class 10th, Intermediate, and B.Tech students across India. We provide high-quality, practical, and project-based courses designed to take students beyond textbook learning.
 
 ## Tech Stack
 

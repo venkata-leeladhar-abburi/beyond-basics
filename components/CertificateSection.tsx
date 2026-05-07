@@ -74,7 +74,7 @@ const CertificateSection = () => {
               <div className="rounded-[24px] overflow-hidden border border-[#E5E7EB]">
                 <img 
                   src="/images/certificate-sample.jpg" 
-                  alt="Beyond Basics Certificate" 
+                  alt="Shraddha Certificate" 
                   className="w-full h-auto shadow-sm"
                 />
               </div>
@@ -91,7 +91,7 @@ const CertificateSection = () => {
               </div>
               <div>
                 <p className="text-[12px] font-bold text-[#6B7280] uppercase tracking-wider">Accredited by</p>
-                <p className="text-[16px] font-bold text-[#111827]">Beyond Basics</p>
+                <p className="text-[16px] font-bold text-[#111827]">Shraddha</p>
               </div>
             </motion.div>
           </motion.div>
