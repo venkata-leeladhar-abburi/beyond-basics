@@ -196,7 +196,7 @@ export default function CourseDetailPage() {
                 <div className="mb-8">
                   <span className="text-[13px] font-bold text-[#814FFF] uppercase tracking-widest block mb-2">Full Access</span>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-[40px] font-bold text-[#111827]">₹799</span>
+                    <span className="text-[40px] font-bold text-[#111827]">₹25,000</span>
                     <span className="text-[#6B7280] font-medium">One time payment</span>
                   </div>
                 </div>
@@ -259,7 +259,7 @@ export default function CourseDetailPage() {
                 title: "Mathematics Mastery — Class 10th",
                 desc: "Stop fearing Maths. Master every chapter — Real Numbers to Trigonometry — with step-by-step video lessons, 500+ practice problems, and board exam-focused shortcuts.",
                 img: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=800&h=500",
-                price: "₹799",
+                price: "₹25,000",
                 level: "Beginner",
                 rotate: "",
                 slug: "mathematics-class-10",
@@ -271,7 +271,7 @@ export default function CourseDetailPage() {
                 title: "Science Mastery — Class 10th",
                 desc: "Physics, Chemistry & Biology — all 3 in one course. Master every 10th Science chapter with animated explanations, diagrams, and board-pattern questions designed for 90+ scores.",
                 img: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800&h=500",
-                price: "₹799",
+                price: "₹25,000",
                 level: "Beginner",
                 rotate: "rotate-3 hover:rotate-0",
                 slug: "science-class-10",
@@ -283,7 +283,7 @@ export default function CourseDetailPage() {
                 title: "Maths for Intermediate — MPC",
                 desc: "From Matrices to Calculus — master Intermediate Maths (1A + 2A + 1B + 2B) with 60+ hours of crystal-clear video lessons designed for IPE, JEE & EAMCET success.",
                 img: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800&h=500",
-                price: "₹1,199",
+                price: "₹25,000",
                 level: "Intermediate",
                 rotate: "",
                 slug: "mathematics-intermediate-mpc",

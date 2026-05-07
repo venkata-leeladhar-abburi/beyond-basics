@@ -7,7 +7,7 @@ const courses = [
   {
     title: "Mathematics Mastery — Class 10th",
     description: "Stop fearing Maths. Master every chapter — Real Numbers to Trigonometry.",
-    price: "₹799",
+    price: "₹25,000",
     level: "Beginner",
     badge: "Featured",
     color: "from-blue-500/20 to-cyan-500/10",
@@ -20,7 +20,7 @@ const courses = [
   {
     title: "Science Mastery — Class 10th",
     description: "Physics, Chemistry & Biology — all 3 in one course. Master every 10th Science chapter.",
-    price: "₹799",
+    price: "₹25,000",
     level: "Beginner",
     badge: "Featured",
     color: "from-green-500/20 to-emerald-500/10",
@@ -33,7 +33,7 @@ const courses = [
   {
     title: "Maths for Intermediate — MPC",
     description: "From Matrices to Calculus — master Intermediate Maths (1A + 2A + 1B + 2B).",
-    price: "₹1,199",
+    price: "₹25,000",
     level: "Intermediate",
     badge: "Featured",
     color: "from-violet-500/20 to-purple-500/10",
@@ -46,7 +46,7 @@ const courses = [
   {
     title: "Physics for Intermediate — MPC",
     description: "Master Intermediate Physics (1st Year + 2nd Year) with derivations and numericals.",
-    price: "₹1,199",
+    price: "₹25,000",
     level: "Intermediate",
     badge: "Featured",
     color: "from-pink-500/20 to-rose-500/10",
@@ -59,7 +59,7 @@ const courses = [
   {
     title: "Python Programming — B.Tech",
     description: "The only Python course a B.Tech student needs. From syntax basics to Data Structures & OOP.",
-    price: "₹1,499",
+    price: "₹25,000",
     level: "Beginner",
     badge: "Featured",
     color: "from-yellow-500/20 to-orange-500/10",
@@ -72,7 +72,7 @@ const courses = [
   {
     title: "DSA — B.Tech Mastery",
     description: "Master Arrays, Linked Lists, Trees, Graphs, Sorting, Searching & Dynamic Programming.",
-    price: "₹1,499",
+    price: "₹25,000",
     level: "Intermediate",
     badge: "Featured",
     color: "from-red-500/20 to-rose-500/10",

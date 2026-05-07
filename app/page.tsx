@@ -267,7 +267,7 @@ export default function BeyondBasicsPage() {
                 title: "Mathematics Mastery — Class 10th",
                 desc: "Stop fearing Maths. Master every chapter — Real Numbers to Trigonometry — with step-by-step video lessons, 500+ practice problems, and board exam-focused shortcuts.",
                 img: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=800&h=500",
-                price: "₹799",
+                price: "₹25,000",
                 level: "Beginner",
                 rotate: "",
                 slug: "mathematics-class-10",
@@ -279,7 +279,7 @@ export default function BeyondBasicsPage() {
                 title: "Science Mastery — Class 10th",
                 desc: "Physics, Chemistry & Biology — all 3 in one course. Master every 10th Science chapter with animated explanations, diagrams, and board-pattern questions designed for 90+ scores.",
                 img: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800&h=500",
-                price: "₹799",
+                price: "₹25,000",
                 level: "Beginner",
                 rotate: "rotate-3 hover:rotate-0",
                 slug: "science-class-10",
@@ -291,7 +291,7 @@ export default function BeyondBasicsPage() {
                 title: "Maths for Intermediate — MPC",
                 desc: "From Matrices to Calculus — master Intermediate Maths (1A + 2A + 1B + 2B) with 60+ hours of crystal-clear video lessons designed for IPE, JEE & EAMCET success.",
                 img: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800&h=500",
-                price: "₹1,199",
+                price: "₹25,000",
                 level: "Intermediate",
                 rotate: "",
                 slug: "mathematics-intermediate-mpc",
@@ -637,45 +637,45 @@ export default function BeyondBasicsPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { 
-                name: "Starter", 
-                price: "₹799", 
+                name: "Single Course", 
+                price: "₹25,000", 
                 period: "/course",
                 features: [
-                  { text: "HD Video Lessons", included: true },
-                  { text: "Downloadable Notes & Resources", included: true },
+                  { text: "Full Access to 1 Selected Course", included: true },
+                  { text: "LIFETIME Access & Updates", included: true },
                   { text: "Certificate of Completion", included: true },
-                  { text: "3 Months Course Access", included: true },
-                  { text: "Access to 10th & Intermediate Courses", included: true }
+                  { text: "Direct Doubt Clearing", included: true },
+                  { text: "Offline Downloads", included: true }
                 ], 
                 highlight: false,
                 badge: ""
               },
               { 
-                name: "Most Popular", 
-                price: "₹1,199", 
-                period: "/course",
+                name: "Advanced Bundle", 
+                price: "₹60,000", 
+                period: "/3 courses",
                 features: [
-                  { text: "Everything in Starter", included: true },
-                  { text: "Lifetime Access", included: true },
-                  { text: "Community Access (20,000+ Students)", included: true },
-                  { text: "Live Doubt Sessions", included: true },
-                  { text: "Project Reviews (B.Tech Courses)", included: true },
-                  { text: "Access to All Course Levels", included: true }
+                  { text: "Everything in Single Course", included: true },
+                  { text: "Access to Any 3 Courses", included: true },
+                  { text: "LIFETIME Access", included: true },
+                  { text: "Save ₹15,000 instantly", included: true },
+                  { text: "Priority Doubt Clearing", included: true },
+                  { text: "Project Reviews Included", included: true }
                 ], 
                 highlight: true,
                 badge: "Popular Plan"
               },
               { 
                 name: "Elite Bundle", 
-                price: "₹1,999", 
-                period: " — All 6 Courses",
+                price: "₹99,999", 
+                period: " — All Courses",
                 features: [
-                  { text: "Unlimited Access to All 6 Courses", included: true },
+                  { text: "Unlimited Access to ALL Courses", included: true },
                   { text: "1-on-1 Mentorship Sessions", included: true },
-                  { text: "Priority Support", included: true },
+                  { text: "Priority WhatsApp Support", included: true },
                   { text: "Career Guidance for Placements", included: true },
                   { text: "Exclusive Live Workshops", included: true },
-                  { text: "Lifetime Access — All Future Updates", included: true }
+                  { text: "LIFETIME Access to All Future Updates", included: true }
                 ], 
                 highlight: false,
                 badge: "Best Value"

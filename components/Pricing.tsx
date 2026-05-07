@@ -1,56 +1,45 @@
 "use client";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Check, X, Sparkles } from "lucide-react";
+import { Check, X, Sparkles, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const plans = [
   {
-    name: "Starter",
-    price: "$50.90",
-    period: "/mo",
-    billing: "Billed annually",
+    name: "Single Course",
+    price: "₹25,000",
+    period: "/course",
+    billing: "One-time payment",
     features: [
-      { text: "Limited Access to the platform", included: true },
-      { text: "10 Free Courses", included: true },
-      { text: "Limited Benefits", included: true },
-      { text: "AI Agent", included: false },
-      { text: "Live Chat Support", included: false },
+      { text: "Full Access to 1 Selected Course", included: true },
+      { text: "LIFETIME Access & Updates", included: true },
+      { text: "Certificate of Completion", included: true },
+      { text: "Direct Doubt Clearing", included: true },
+      { text: "Offline Downloads", included: true },
+      { text: "Access to All Courses", included: false },
     ],
-    cta: "Get Started",
+    cta: "Explore Courses",
+    href: "/courses",
     popular: false,
-    cardClass: "bg-[#13131f] border-white/8",
+    cardClass: "bg-white border-[#E5E7EB]",
   },
   {
-    name: "Pro",
-    price: "$70.90",
-    period: "/mo",
-    billing: "Billed annually",
+    name: "Unlimited Pass",
+    price: "₹99,999",
+    period: "/lifetime",
+    billing: "Best value for students",
     features: [
-      { text: "Full Access to the platform", included: true },
-      { text: "20 Free Courses", included: true },
-      { text: "Unlimited Benefits", included: true },
-      { text: "AI Agent", included: true },
-      { text: "Live Chat Support", included: true },
+      { text: "Full Access to ALL Current Courses", included: true },
+      { text: "Access to ALL Future Courses", included: true },
+      { text: "Priority Support (WhatsApp)", included: true },
+      { text: "1-on-1 Mentorship Session", included: true },
+      { text: "Career & Resume Guidance", included: true },
+      { text: "Industry Expert Networking", included: true },
     ],
-    cta: "Get Started",
-    popular: false,
-    cardClass: "bg-[#13131f] border-white/8",
-  },
-  {
-    name: "Business",
-    price: "$99.90",
-    period: "/mo",
-    billing: "Billed annually",
-    features: [
-      { text: "Full Access to the platform", included: true },
-      { text: "30 Free Courses", included: true },
-      { text: "Unlimited Benefits", included: true },
-      { text: "AI Agent", included: true },
-      { text: "Live Chat Support", included: true },
-    ],
-    cta: "Get Started",
+    cta: "Get Unlimited Access",
+    href: "/contact",
     popular: true,
-    cardClass: "bg-gradient-to-b from-violet-600/20 to-violet-900/10 border-violet-500/40",
+    cardClass: "bg-white border-[#8B5CF6]/30 shadow-xl shadow-violet-500/5",
   },
 ];
 
@@ -59,71 +48,73 @@ export default function Pricing() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="pricing" ref={ref} className="py-24 bg-[#08080f]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="pricing" ref={ref} className="py-24 bg-white">
+      <div className="max-w-[1200px] mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }} animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-violet-400 text-sm font-semibold tracking-widest uppercase">Pricing</span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-white">Simple, Transparent Pricing</h2>
-          <p className="mt-4 text-slate-400 max-w-lg mx-auto">
-            Choose the plan that fits your learning goals. All plans include access to our expert-led courses.
+          <span className="text-[#8B5CF6] text-sm font-bold tracking-widest uppercase">Pricing</span>
+          <h2 className="mt-4 text-[42px] md:text-[56px] font-extrabold text-[#111827] tracking-tight">Invest in Your Future</h2>
+          <p className="mt-4 text-[#6B7280] text-[18px] max-w-[600px] mx-auto font-medium">
+            Join thousands of students across India who are going beyond the basics. No hidden fees, just pure learning.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 items-stretch">
+        <div className="flex flex-col md:flex-row justify-center gap-8 items-stretch max-w-[900px] mx-auto">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
               initial={{ opacity: 0, y: 40 }} animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.12, duration: 0.6 }}
-              className={`relative flex flex-col p-7 rounded-2xl border card-hover ${plan.cardClass}`}
+              className={`relative flex-1 flex flex-col p-10 rounded-[32px] border transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${plan.cardClass}`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-violet-600 text-white text-xs font-bold rounded-full shadow-lg shadow-violet-500/40">
-                    <Sparkles size={12} /> Popular Plan
+                  <span className="inline-flex items-center gap-1.5 px-5 py-2 bg-[#8B5CF6] text-white text-[12px] font-bold rounded-full shadow-lg shadow-violet-500/40 uppercase tracking-wider">
+                    <Sparkles size={14} /> Recommended
                   </span>
                 </div>
               )}
 
-              <div className="mb-6">
-                <p className="text-slate-400 text-sm font-medium mb-3">{plan.name} plan</p>
+              <div className="mb-8">
+                <p className="text-[#6B7280] text-[15px] font-bold mb-4 uppercase tracking-wide">{plan.name}</p>
                 <div className="flex items-end gap-1">
-                  <span className="text-5xl font-bold text-white">{plan.price}</span>
-                  <span className="text-slate-400 text-sm mb-2">{plan.period}</span>
+                  <span className="text-[48px] font-extrabold text-[#111827] leading-none">{plan.price}</span>
+                  <span className="text-[#6B7280] text-[16px] font-bold mb-2">{plan.period}</span>
                 </div>
-                <p className="text-slate-500 text-xs mt-1">{plan.billing}</p>
+                <p className="text-[#9CA3AF] text-[14px] mt-2 font-medium">{plan.billing}</p>
               </div>
 
-              <ul className="flex-1 space-y-3 mb-8">
+              <ul className="flex-1 space-y-4 mb-10">
                 {plan.features.map((f) => (
-                  <li key={f.text} className="flex items-center gap-3 text-sm">
-                    {f.included
-                      ? <Check size={16} className="text-violet-400 shrink-0" />
-                      : <X size={16} className="text-slate-600 shrink-0" />}
-                    <span className={f.included ? "text-slate-300" : "text-slate-600"}>{f.text}</span>
+                  <li key={f.text} className="flex items-start gap-3 text-[15px]">
+                    <div className={`mt-1 shrink-0 ${f.included ? "text-[#10B981]" : "text-[#D1D5DB]"}`}>
+                      {f.included ? <Check size={18} strokeWidth={3} /> : <X size={18} strokeWidth={3} />}
+                    </div>
+                    <span className={`font-semibold ${f.included ? "text-[#374151]" : "text-[#9CA3AF]"}`}>{f.text}</span>
                   </li>
                 ))}
               </ul>
 
-              <a
-                href="https://framebase.lemonsqueezy.com/buy/80ebc834-9132-41aa-9cd5-e8170c4a7e95"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`w-full py-3.5 rounded-full text-sm font-semibold text-center transition-all ${
+              <Link
+                href={plan.href}
+                className={`w-full py-5 rounded-2xl text-[16px] font-extrabold text-center transition-all flex items-center justify-center gap-2 ${
                   plan.popular
-                    ? "bg-violet-600 hover:bg-violet-500 text-white shadow-lg shadow-violet-500/30 hover:shadow-violet-500/50"
-                    : "border border-white/10 text-slate-300 hover:text-white hover:border-white/20"
+                    ? "bg-[#111827] hover:bg-[#374151] text-white shadow-xl"
+                    : "border-2 border-[#111827] text-[#111827] hover:bg-[#111827] hover:text-white"
                 }`}
               >
-                {plan.cta}
-              </a>
+                {plan.cta} <ArrowRight size={20} />
+              </Link>
             </motion.div>
           ))}
         </div>
+
+        <p className="mt-12 text-center text-[#6B7280] text-[14px] font-medium">
+          Payments are secure and encrypted. Need help? <Link href="/contact" className="text-[#8B5CF6] font-bold hover:underline">Contact Support</Link>
+        </p>
       </div>
     </section>
   );

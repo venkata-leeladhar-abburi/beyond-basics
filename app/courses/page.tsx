@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Topics from "@/components/Topics";
 import Footer from "@/components/Footer";
 
 const fadeUp: Variants = {
@@ -29,7 +30,7 @@ const courses = [
     title: "Mathematics Mastery — Class 10th",
     desc: "Stop fearing Maths. Master every chapter — Real Numbers to Trigonometry — with step-by-step video lessons, 500+ practice problems, and board exam-focused shortcuts.",
     img: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=800&h=500",
-    price: "₹799",
+    price: "₹25,000",
     level: "Beginner",
     lessons: 45,
     hours: 40,
@@ -41,7 +42,7 @@ const courses = [
     title: "Science Mastery — Class 10th",
     desc: "Physics, Chemistry & Biology — all 3 in one course. Master every 10th Science chapter with animated explanations, diagrams, and board-pattern questions designed for 90+ scores.",
     img: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800&h=500",
-    price: "₹799",
+    price: "₹25,000",
     level: "Beginner",
     lessons: 50,
     hours: 45,
@@ -53,7 +54,7 @@ const courses = [
     title: "Maths for Intermediate — MPC",
     desc: "From Matrices to Calculus — master Intermediate Maths (1A + 2A + 1B + 2B) with 60+ hours of crystal-clear video lessons designed for IPE, JEE & EAMCET success.",
     img: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800&h=500",
-    price: "₹1,199",
+    price: "₹25,000",
     level: "Intermediate",
     lessons: 65,
     hours: 60,
@@ -65,7 +66,7 @@ const courses = [
     title: "Physics for Intermediate — MPC",
     desc: "Master Intermediate Physics (1st Year + 2nd Year) with derivations, numericals, and concept videos built for IPE board exams and EAMCET/JEE preparation.",
     img: "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&q=80&w=800&h=500",
-    price: "₹1,199",
+    price: "₹25,000",
     level: "Intermediate",
     lessons: 58,
     hours: 55,
@@ -77,7 +78,7 @@ const courses = [
     title: "Python Programming — B.Tech",
     desc: "The only Python course a B.Tech student needs. From syntax basics to Data Structures, OOP, File Handling & real projects.",
     img: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&q=80&w=800&h=500",
-    price: "₹1,499",
+    price: "₹25,000",
     level: "Beginner",
     lessons: 55,
     hours: 50,
@@ -89,7 +90,7 @@ const courses = [
     title: "DSA — B.Tech Mastery",
     desc: "The #1 DSA course for B.Tech students in India. Master Arrays, Linked Lists, Trees, Graphs, Sorting, Searching & Dynamic Programming.",
     img: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&q=80&w=800&h=500",
-    price: "₹1,499",
+    price: "₹25,000",
     level: "Intermediate",
     lessons: 60,
     hours: 55,
@@ -172,6 +173,11 @@ export default function CoursesPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* ============================================
+          TOPICS SECTION
+          ============================================ */}
+      <Topics />
 
       {/* ============================================
           COURSES GRID
