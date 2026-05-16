@@ -173,40 +173,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* 6. MEET THE TEAM SECTION */}
-      <section className="py-[100px] px-6">
-        <div className="max-w-[1200px] mx-auto text-center">
-          <span className="text-[#8B5CF6] text-[12px] font-bold tracking-[2px] uppercase mb-4 block">THE PEOPLE BEHIND SHRADDHA</span>
-          <h2 className="text-[36px] md:text-[48px] font-extrabold text-[#111827] mb-6">Meet Our Team</h2>
-          <p className="text-[18px] text-[#6B7280] font-medium max-w-[600px] mx-auto mb-16">
-            A passionate team of educators, designers, and technologists — all united by one goal: your success.
-          </p>
 
-          <motion.div 
-            variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
-            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          >
-            {[
-              { name: "[Founder Name]", role: "Founder & CEO", bio: "Visionary educator with a passion for making quality learning accessible to every Indian student." },
-              { name: "[Name]", role: "Head of Curriculum", bio: "10+ years of teaching experience across B.Tech and Intermediate levels." },
-              { name: "[Name]", role: "Lead Instructor — Web Dev", bio: "Working professional & educator who makes JavaScript and UI/UX feel like second nature." },
-              { name: "[Name]", role: "Student Success Manager", bio: "Dedicated to ensuring every student gets the support they need to succeed." }
-            ].map((member, i) => (
-              <motion.div 
-                key={i} variants={fadeUp}
-                className="bg-white rounded-[24px] p-8 border border-[#E5E7EB] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300"
-              >
-                <div className="w-24 h-24 mx-auto rounded-full bg-[#F3F4F6] border-4 border-white shadow-md mb-6 overflow-hidden flex items-center justify-center">
-                  <div className="text-[#9CA3AF] opacity-50"><GraduationCap size={40} /></div>
-                </div>
-                <h3 className="text-[18px] font-bold text-[#111827] mb-1">{member.name}</h3>
-                <p className="text-[13px] font-bold text-[#8B5CF6] uppercase tracking-wider mb-4">{member.role}</p>
-                <p className="text-[#6B7280] text-[14px] leading-relaxed font-medium">{member.bio}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       {/* 7. WHY CHOOSE SHRADDHA SECTION */}
       <section className="py-[100px] px-6 bg-[#F3F4F6] border-y border-[#E5E7EB]">

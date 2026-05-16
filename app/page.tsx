@@ -1018,7 +1018,7 @@ export default function ShraddhaPage() {
             className="flex flex-wrap justify-center gap-4 max-w-[850px] mx-auto mb-[100px]"
           >
             {[
-              "Web Development", "Java Script", "Framer", "Web Design", "Webflow", "CSS", "UI/UX Design", "Angular", "React"
+              "Web Development", "JavaScript", "Web Design", "CSS", "UI/UX Design"
             ].map((topic, i) => (
               <div 
                 key={i} 

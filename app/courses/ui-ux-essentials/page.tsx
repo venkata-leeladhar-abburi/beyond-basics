@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { Star, ArrowRight, Play, Check, Clock, Download, Infinity as InfinityIcon, ChevronRight, ChevronDown, ListChecks, Sparkles, BookOpen, Award } from 'lucide-react';
 import Link from "next/link";
@@ -10,6 +10,10 @@ import CertificateSection from "@/components/CertificateSection";
 
 export default function UiUxCourseDetailPage() {
   const [curriculumOpen, setCurriculumOpen] = useState<number | null>(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const fadeUp: Variants = {
     hidden: { opacity: 0, y: 30 },
