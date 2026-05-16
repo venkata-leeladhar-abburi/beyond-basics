@@ -192,13 +192,8 @@ export default function UiUxCourseDetailPage() {
                       <p>Focused on helping students build highly polished, interactive portfolios that stand out in the industry.</p>
                     </div>
                   </div>
-                  <div className="w-[180px] h-[180px] rounded-full border-4 border-white/10 p-2 shrink-0">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200" alt="Instructor" className="w-full h-full rounded-full object-cover" />
-                  </div>
                 </div>
               </div>
-
-            </div>
 
             {/* Right Sticky Sidebar */}
             <aside className="lg:sticky lg:top-32">
