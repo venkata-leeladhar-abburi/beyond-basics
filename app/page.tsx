@@ -261,43 +261,31 @@ export default function ShraddhaPage() {
             </motion.p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 pb-12">
+          <div className="grid md:grid-cols-2 gap-8 pb-12 max-w-[800px] mx-auto">
             {[
               {
-                title: "Mathematics Mastery — Class 10th",
-                desc: "Stop fearing Maths. Master every chapter — Real Numbers to Trigonometry — with step-by-step video lessons, 500+ practice problems, and board exam-focused shortcuts.",
-                img: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=800&h=500",
+                title: "Web Development Fundamentals",
+                desc: "Master the basics of web development. Learn HTML, CSS, JavaScript and build your first responsive websites from scratch.",
+                img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop",
                 price: "₹25,000",
                 level: "Beginner",
                 rotate: "",
-                slug: "mathematics-class-10",
-                category: "10th Class",
-                lessons: 45,
-                hours: 40
+                slug: "web-development-fundamentals",
+                category: "Development",
+                lessons: 40,
+                hours: 35
               },
               {
-                title: "Science Mastery — Class 10th",
-                desc: "Physics, Chemistry & Biology — all 3 in one course. Master every 10th Science chapter with animated explanations, diagrams, and board-pattern questions designed for 90+ scores.",
-                img: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800&h=500",
+                title: "UI/UX Essentials",
+                desc: "Learn the core principles of UI/UX design. Master Figma, wireframing, prototyping, and create stunning user interfaces.",
+                img: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&auto=format&fit=crop",
                 price: "₹25,000",
                 level: "Beginner",
                 rotate: "rotate-3 hover:rotate-0",
-                slug: "science-class-10",
-                category: "10th Class",
-                lessons: 50,
-                hours: 45
-              },
-              {
-                title: "Maths for Intermediate — MPC",
-                desc: "From Matrices to Calculus — master Intermediate Maths (1A + 2A + 1B + 2B) with 60+ hours of crystal-clear video lessons designed for IPE, JEE & EAMCET success.",
-                img: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800&h=500",
-                price: "₹25,000",
-                level: "Intermediate",
-                rotate: "",
-                slug: "mathematics-intermediate-mpc",
-                category: "Intermediate",
-                lessons: 65,
-                hours: 60
+                slug: "ui-ux-essentials",
+                category: "Design",
+                lessons: 35,
+                hours: 30
               }
             ].map((course, i) => (
               <Link

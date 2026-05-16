@@ -5,82 +5,30 @@ import { Star, ArrowUpRight } from "lucide-react";
 
 const courses = [
   {
-    title: "Mathematics Mastery — Class 10th",
-    description: "Stop fearing Maths. Master every chapter — Real Numbers to Trigonometry.",
+    title: "Web Development Fundamentals",
+    description: "Master the basics of web development. Learn HTML, CSS, JavaScript and build your first responsive websites from scratch.",
     price: "₹25,000",
     level: "Beginner",
     badge: "Featured",
     color: "from-blue-500/20 to-cyan-500/10",
-    icon: "M10",
+    icon: "WD",
     iconBg: "bg-blue-500",
-    hours: "40h",
-    lessons: 45,
-    slug: "mathematics-class-10"
+    hours: "35h",
+    lessons: 40,
+    slug: "web-development-fundamentals"
   },
   {
-    title: "Science Mastery — Class 10th",
-    description: "Physics, Chemistry & Biology — all 3 in one course. Master every 10th Science chapter.",
+    title: "UI/UX Essentials",
+    description: "Learn the core principles of UI/UX design. Master Figma, wireframing, prototyping, and create stunning user interfaces.",
     price: "₹25,000",
     level: "Beginner",
-    badge: "Featured",
-    color: "from-green-500/20 to-emerald-500/10",
-    icon: "S10",
-    iconBg: "bg-green-500",
-    hours: "45h",
-    lessons: 50,
-    slug: "science-class-10"
-  },
-  {
-    title: "Maths for Intermediate — MPC",
-    description: "From Matrices to Calculus — master Intermediate Maths (1A + 2A + 1B + 2B).",
-    price: "₹25,000",
-    level: "Intermediate",
     badge: "Featured",
     color: "from-violet-500/20 to-purple-500/10",
-    icon: "MI",
+    icon: "UX",
     iconBg: "bg-violet-500",
-    hours: "60h",
-    lessons: 65,
-    slug: "mathematics-intermediate-mpc"
-  },
-  {
-    title: "Physics for Intermediate — MPC",
-    description: "Master Intermediate Physics (1st Year + 2nd Year) with derivations and numericals.",
-    price: "₹25,000",
-    level: "Intermediate",
-    badge: "Featured",
-    color: "from-pink-500/20 to-rose-500/10",
-    icon: "PI",
-    iconBg: "bg-pink-500",
-    hours: "55h",
-    lessons: 58,
-    slug: "physics-intermediate-mpc"
-  },
-  {
-    title: "Python Programming — B.Tech",
-    description: "The only Python course a B.Tech student needs. From syntax basics to Data Structures & OOP.",
-    price: "₹25,000",
-    level: "Beginner",
-    badge: "Featured",
-    color: "from-yellow-500/20 to-orange-500/10",
-    icon: "Py",
-    iconBg: "bg-yellow-500",
-    hours: "50h",
-    lessons: 55,
-    slug: "python-programming-btech"
-  },
-  {
-    title: "DSA — B.Tech Mastery",
-    description: "Master Arrays, Linked Lists, Trees, Graphs, Sorting, Searching & Dynamic Programming.",
-    price: "₹25,000",
-    level: "Intermediate",
-    badge: "Featured",
-    color: "from-red-500/20 to-rose-500/10",
-    icon: "DSA",
-    iconBg: "bg-red-500",
-    hours: "55h",
-    lessons: 60,
-    slug: "dsa-btech"
+    hours: "30h",
+    lessons: 35,
+    slug: "ui-ux-essentials"
   }
 ];
 
@@ -103,7 +51,7 @@ export default function FeaturedCourses() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
           {courses.map((course, i) => (
             <motion.div
               key={course.title}
