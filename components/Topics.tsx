@@ -4,7 +4,8 @@ import { motion, useInView } from "framer-motion";
 import { Sparkles } from "lucide-react";
 
 const topics = [
-  "Web Development", "JavaScript", "Web Design", "CSS", "UI/UX Design"
+  "Web Development", "JavaScript", "HTML", "CSS", "UI/UX Design",
+  "Web Design", "Figma", "Responsive Design", "Git", "GitHub"
 ];
 
 export default function Topics() {
