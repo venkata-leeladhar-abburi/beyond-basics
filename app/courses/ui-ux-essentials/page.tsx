@@ -194,6 +194,7 @@ export default function UiUxCourseDetailPage() {
                   </div>
                 </div>
               </div>
+            </div>
 
             {/* Right Sticky Sidebar */}
             <aside className="lg:sticky lg:top-32">
